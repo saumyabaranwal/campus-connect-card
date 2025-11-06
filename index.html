@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Cube Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Nav bar which contains log out and name of our website-->
+<div class="topnav">
+  <div class="left-title">
+    <!-- logo of our website -->
+    <div class="logo">C³</div>
+    <span>Campus Connect Card</span>
+  </div>
+  <!-- log out button -->
+  <button class="logout">Logout</button>
+</div>
+
+<!-- tab structure buttons for navigation -->
+<div class="tabs">
+  <button class="tab active">Overview</button>
+  <button class="tab">Transactions</button>
+  <button class="tab">Top Up</button>
+  <button class="tab">ID Card</button>
+  <button class="tab">Settings</button>
+</div>
+
+<!-- section 3 for summary cards -->
+<div class="wrapper">
+
+  <!-- top -->
+  <div class="info-cards">
+
+    <!-- CARD 1: BALANCE -->
+    <div class="card-box">
+      <p>Card Balance</p>
+      <h2>₹1250.50</h2>
+      <span class="status active">Active</span>
+    </div>
+
+    <!-- CARD 2: TODAY'S SPEND -->
+    <div class="card-box">
+      <p>Today's Spending</p>
+      <h2 class="red">₹45.00</h2>
+      <span class="note">Daily limit: ₹500</span>
+    </div>
+
+    <!-- CARD 3: REMAINING LIMIT -->
+    <div class="card-box">
+      <p>Remaining Limit</p>
+      <h2 class="green">₹455.00</h2>
+      <span class="note">Resets daily at midnight</span>
+    </div>
+  </div>
+
+  <!-- bottom big section divided into two sides -->
+  <div class="lower">
+
+    <!-- left is RECENT TRANSACTIONS LIST -->
+    <div class="left-feed">
+      <h3>Recent Transactions</h3>
+
+      <!-- possible transactions -->
+      <div class="feed-row">
+        <span>Campus Cafe</span>
+        <span class="red">-₹45.00</span>
+      </div>
+
+      <div class="feed-row">
+        <span>Top Up</span>
+        <span class="green">+₹500.00</span>
+      </div>
+
+      <div class="feed-row">
+        <span>Print Shop</span>
+        <span class="red">-₹12.50</span>
+      </div>
+
+      <div class="feed-row">
+        <span>Tuck Shop</span>
+        <span class="red">-₹30.00</span>
+      </div>
+
+      <div class="feed-row">
+        <span>Table Tennis</span>
+        <span class="red">-₹20.00</span>
+      </div>
+
+      <!-- navigatikon for transaction page -->
+      <button class="viewall">View All Transactions →</button>
+    </div>
+
+    <!-- right- category spending chart for analysis -->
+    <div class="right-chart">
+      <h3>Spending by Category</h3>
+
+      <!-- EACH ROW = CATEGORY NAME + COLORED BAR + AMOUNT -->
+      <div class="bar-row"><span>Cafe</span><div class="bar cafe"></div><span>₹245.00</span></div>
+      <div class="bar-row"><span>Tuck Shop</span><div class="bar tuck"></div><span>₹180.00</span></div>
+      <div class="bar-row"><span>Print Shop</span><div class="bar print"></div><span>₹65.50</span></div>
+      <div class="bar-row"><span>Activities</span><div class="bar act"></div><span>₹120.00</span></div>
+      <div class="bar-row"><span>Events & Fests</span><div class="bar fest"></div><span>₹200.00</span></div>
+
+    </div>
+
+  </div> <!-- lower end -->
+</div> <!-- wrapper end -->
+
+</body>
+</html>
