@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Cube Transactions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <img class="brand-icon" src="https://i.ibb.co/YPST8hF/card.png" alt="Campus Connect Card"/>
+    <div class="brand-text">
+      <div class="brand-title">Campus Connect Card</div>
+      <div class="brand-sub">C³ System</div>
+    </div>
+  </div>
+
+  <button class="icon-btn">
+    <span>⇪</span>
+    <span class="icon-btn-text">Logout</span>
+  </button>
+</header>
+
+<nav class="tabs-pill">
+  <button class="pill" onclick="window.location='index.html'">Overview</button>
+  <button class="pill active">Transactions</button>
+  <button class="tab" onclick="window.location='topup.html'">Top Up</button>
+  <button class="pill">ID Card</button>
+  <button class="tab active" onclick="window.location='settings.html'">Settings</button>
+
+</nav>
+
+
+<div class="wrapper">
+
+  <div class="txn-wrapper">
+
+    <h3 style="margin-bottom:4px;">Transaction History</h3>
+    <p style="color:#666;margin-bottom:15px;">View and filter all your card transactions</p>
+<div class="filterbar">
+
+  <div class="searchbox">
+    <span class="icon">🔍</span>
+    <input type="text" placeholder="Search transactions...">
+  </div>
+
+  <div class="filters-right">
+    <button class="filter-btn">All Types ▾</button>
+    <button class="filter-btn">All Categories ▾</button>
+    <button class="export-btn">⤴ Export</button>
+  </div>
+
+</div>
+
+    <div class="txn-table">
+      <table>
+        <tr>
+          <th>Transaction ID</th>
+          <th>Date & Time</th>
+          <th>Location</th>
+          <th>Category</th>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Balance</th>
+        </tr>
+
+        <tr><td>TXN001</td><td>6 Nov 2025, 10:30 am</td><td>Campus Cafe</td><td>Cafe</td><td>Debit</td><td class="red">-₹45.00</td><td>₹1250.50</td></tr>
+        <tr><td>TXN002</td><td>5 Nov 2025, 02:20 pm</td><td>Online Top Up</td><td>Top Up</td><td class="green">Credit</td><td class="green">+₹500.00</td><td>₹1295.50</td></tr>
+        <tr><td>TXN003</td><td>5 Nov 2025, 11:15 am</td><td>Print Shop</td><td>Print</td><td>Debit</td><td class="red">-₹12.50</td><td>₹795.50</td></tr>
+        <tr><td>TXN004</td><td>4 Nov 2025, 04:45 pm</td><td>Tuck Shop</td><td>Food</td><td>Debit</td><td class="red">-₹30.00</td><td>₹808.00</td></tr>
+        <tr><td>TXN005</td><td>4 Nov 2025, 01:00 pm</td><td>Table Tennis</td><td>Activities</td><td>Debit</td><td class="red">-₹20.00</td><td>₹838.00</td></tr>
+        <tr><td>TXN006</td><td>3 Nov 2025, 12:30 pm</td><td>Campus Cafe</td><td>Cafe</td><td>Debit</td><td class="red">-₹55.00</td><td>₹858.00</td></tr>
+        <tr><td>TXN007</td><td>2 Nov 2025, 09:00 am</td><td>Annual Fest Registration</td><td>Events</td><td>Debit</td><td class="red">-₹200.00</td><td>₹913.00</td></tr>
+        <tr><td>TXN008</td><td>1 Nov 2025, 03:20 pm</td><td>Print Shop</td><td>Print</td><td>Debit</td><td class="red">-₹25.00</td><td>₹1113.00</td></tr>
+        <tr><td>TXN009</td><td>30 Oct 2025, 10:00 am</td><td>Card Activation</td><td>Top Up</td><td class="green">Credit</td><td class="green">+₹1000.00</td><td>₹1138.00</td></tr>
+        <tr><td>TXN010</td><td>29 Oct 2025, 02:15 pm</td><td>Tuck Shop</td><td>Food</td><td>Debit</td><td class="red">-₹35.00</td><td>₹138.00</td></tr>
+
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

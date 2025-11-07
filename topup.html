@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Connect Card - Top Up</title>
+    <!-- Linking the external CSS file for styling this page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="nav-links">
+            <a href="overview.html">Overview</a>
+            <a class="active" href="topup.html">Top Up</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="idcard.html">ID Card</a>
+            <a href="settings.html">Settings</a>
+        </div>
+        <button class="logout-btn">Logout</button>
+    </nav>
+    <!-- Main content container for the page -->
+    <div class="container">
+        <div class="card-group">
+            <div class="card balance-card">
+                <h3>Card Balance</h3>
+                <p class="balance">₹1250.50</p>
+                <span class="status active">Active</span>
+            </div>
+            <div class="card topup-card">
+                <h3>Top Up Card</h3>
+                <form>
+                    <label for="amount">Enter Amount:</label>
+                    <!-- Input field to enter the top-up amount -->
+                    <input type="number" id="amount" name="amount" min="10" max="1000" required>
+                    <!-- Submit button to confirm top-up -->
+                    <button type="submit">Top Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card transactions-card">
+            <h4>Recent Top Ups</h4>
+            <ul>
+                <li>+ ₹500.00 <span class="date">Today</span></li>
+                <li>+ ₹300.00 <span class="date">03 Nov</span></li>
+                <li>+ ₹200.00 <span class="date">01 Nov</span></li>
+            </ul>
+            <a href="transactions.html">View All Transactions →</a>
+        </div>
+    </div>
+</body>
+</html>

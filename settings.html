@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Cube Settings</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topnav">
+  <div class="left-title">
+    <div class="logo">C³</div>
+    <span>Campus Connect Card</span>
+  </div>
+  <button class="logout">Logout</button>
+</div>
+
+<div class="tabs">
+  <button class="tab" onclick="window.location='index.html'">Overview</button>
+  <button class="tab" onclick="window.location='transaction.html'">Transactions</button>
+  <button class="tab" onclick="window.location='topup.html'">Top Up</button>
+  <button class="tab">ID Card</button>
+  <button class="tab active">Settings</button>
+</div>
+
+<div class="wrapper">
+
+  <div class="notice-card warn">
+    <strong>⚠ Security Notice</strong>
+    <p>To avoid misuse, some changes require verification. If you forgot your PIN, please visit the administration office.</p>
+  </div>
+
+  <div class="setting-card">
+    <h3>Card Status</h3>
+    <p>Your card is active and ready to use</p>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+    <button class="danger-btn">Report Card as Lost/Stolen</button>
+  </div>
+
+  <div class="setting-card">
+    <h3>Spending Limits</h3>
+    <p>Set daily transaction limits to control your spending</p>
+
+    <label>Daily Spending Limit (₹)</label>
+    <input type="number" placeholder="500">
+    <small>Minimum: ₹100 | Maximum: ₹5000 per day</small>
+
+    <button class="primary-btn">Update Daily Limit</button>
+  </div>
+
+  <div class="setting-card">
+    <h3>Contact Information</h3>
+    <p>Update your phone number for notifications</p>
+    
+    <label>Phone Number</label>
+    <input type="text" placeholder="+91 98765-43210">
+    <small>You’ll receive transaction alerts and notifications on this number</small>
+
+    <button class="primary-btn">Update Phone Number</button>
+  </div>
+
+  <div class="setting-card">
+    <h3>Change PIN</h3>
+    <p>Update your 6-digit security PIN</p>
+
+    <label>Current PIN</label>
+    <input type="text" placeholder="••••••">
+
+    <label>New PIN</label>
+    <input type="text" placeholder="••••••">
+
+    <label>Confirm New PIN</label>
+    <input type="text" placeholder="••••••">
+
+    <button class="primary-btn">Change PIN</button>
+  </div>
+
+</div>
+
+</body>
+</html>
